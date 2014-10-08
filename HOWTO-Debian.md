@@ -61,7 +61,8 @@ partitions:
 We have already prepared a boot partition that you can simply flash
 on your SD card.  Follow the eewiki.net howto to build it from scratch.
 
-	wget -c http://pasky.or.cz/dev/pubnub/SAMA5D3X-boot.img
+	wget -c http://pasky.or.cz/dev/pubnub/SAMA5D3X-boot.img.xz
+	xz -d SAMA5D3X-boot.img.xz
 	sudo dd if=SAMA5D3X-boot.img of=${DISKP}1 bs=1M
 
 ## Setup Debian Root Partition
@@ -138,5 +139,4 @@ And let's try some PubNub client example:
 (and hit the 'a' key now)
 
 
-TODO: Make archives available.
 TODO: A board-specific LED-flashing demo.
