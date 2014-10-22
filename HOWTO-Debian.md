@@ -138,5 +138,12 @@ And let's try some PubNub client example:
 
 (and hit the 'a' key now)
 
+You can also try a board-specific PubNub example that will connect
+the LEDs and user button of this board to a PubNub channel:
 
-TODO: A board-specific LED-flashing demo.
+	cd ~
+	git clone https://github.com/pubnub/sama5d3
+	cd sama5d3/example-ledbtn
+	less README.md
+
+...and follow the instructions in the example-specific README.
